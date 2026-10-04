@@ -1,0 +1,22 @@
+test_available (__main__.FoodWasteTests.test_available) ... ok
+test_blank_fields_rejected (__main__.FoodWasteTests.test_blank_fields_rejected) ... ok
+test_delete (__main__.FoodWasteTests.test_delete) ... ok
+test_duplicate_id_rejected (__main__.FoodWasteTests.test_duplicate_id_rejected) ... ok
+test_expired (__main__.FoodWasteTests.test_expired) ... ok
+test_expiring_soon_boundaries (__main__.FoodWasteTests.test_expiring_soon_boundaries) ... ok
+test_expiry_before_purchase_rejected (__main__.FoodWasteTests.test_expiry_before_purchase_rejected) ... ok
+test_invalid_date_format_rejected (__main__.FoodWasteTests.test_invalid_date_format_rejected) ... ok
+test_negative_quantity_rejected (__main__.FoodWasteTests.test_negative_quantity_rejected) ... ok
+test_non_numeric_and_empty_quantity_rejected (__main__.FoodWasteTests.test_non_numeric_and_empty_quantity_rejected) ... ok
+test_reduce_and_increase_work (__main__.FoodWasteTests.test_reduce_and_increase_work) ... ok
+test_reduce_below_zero_rejected (__main__.FoodWasteTests.test_reduce_below_zero_rejected) ... ok
+test_search_by_name_and_category (__main__.FoodWasteTests.test_search_by_name_and_category) ... ok
+test_summary (__main__.FoodWasteTests.test_summary) ... ok
+test_unknown_id (__main__.FoodWasteTests.test_unknown_id) ... ok
+test_valid_item_added (__main__.FoodWasteTests.test_valid_item_added) ... ok
+test_zero_quantity_rejected (__main__.FoodWasteTests.test_zero_quantity_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.009s
+
+OK

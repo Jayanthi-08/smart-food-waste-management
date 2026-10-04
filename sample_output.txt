@@ -1,0 +1,279 @@
+[INFO] Smart Food-Waste Management System started
+[INFO] Operating date: 2026-10-01
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 1
+
+--- ADD FOOD ITEM ---
+Item ID : FD004
+Food Name : Fresh Paneer
+Category : Dairy
+Quantity : -5
+[ERROR] Quantity must be greater than zero. Please try again.
+Quantity : abc
+[ERROR] Quantity must be a number.
+Quantity : 8
+Unit : kg
+Purchase Date (YYYY-MM-DD) : 2026-09-30
+Expiry Date (YYYY-MM-DD) : 2026-09-25
+[ERROR] Expiry date cannot be earlier than purchase date.
+Expiry Date (YYYY-MM-DD) : 30-09-2026
+[ERROR] Invalid date. Use YYYY-MM-DD and a real calendar date (e.g. 2026-10-01).
+Expiry Date (YYYY-MM-DD) : 2026-10-02
+[SUCCESS] Food item FD004 added successfully.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 1
+
+--- ADD FOOD ITEM ---
+Item ID : FD001
+[ERROR] Item ID FD001 already exists. IDs must be unique.
+Item ID : FD005
+Food Name : Curd
+Category : Dairy
+Quantity : 2
+Unit : kg
+Purchase Date (YYYY-MM-DD) : 2026-09-30
+Expiry Date (YYYY-MM-DD) : 2026-10-06
+[SUCCESS] Food item FD005 added successfully.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 2
+
+--- CURRENT INVENTORY ---
+ID      ITEM              CATEGORY    QTY           PURCHASED   EXPIRY      STATUS
+----------------------------------------------------------------------------------------
+FD001   Milk              Dairy       12 L          2026-09-26  2026-09-30  EXPIRED
+FD002   Tomatoes          Vegetable   15 kg         2026-09-27  2026-10-02  EXPIRING SOON
+FD003   Rice              Grain       25 kg         2026-09-01  2027-02-15  AVAILABLE
+FD004   Fresh Paneer      Dairy       8 kg          2026-09-30  2026-10-02  EXPIRING SOON
+FD005   Curd              Dairy       2 kg          2026-09-30  2026-10-06  AVAILABLE
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 6
+
+--- EXPIRY MONITOR ---
+ID      ITEM              QTY         EXPIRY      STATUS         ACTION
+FD001   Milk              12 L        2026-09-30  EXPIRED        DISPOSE (food-safety rules)
+FD002   Tomatoes          15 kg       2026-10-02  EXPIRING SOON  USE / DONATE NOW
+FD004   Fresh Paneer      8 kg        2026-10-02  EXPIRING SOON  USE / DONATE NOW
+FD005   Curd              2 kg        2026-10-06  AVAILABLE      -
+FD003   Rice              25 kg       2027-02-15  AVAILABLE      -
+[ALERT] 1 item has expired.
+[ALERT] 2 items require attention within 3 days.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 7
+
+--- INVENTORY SUMMARY ---
+Total food records       : 5
+Total quantity           : 62  (units are mixed)
+Expired items            : 1
+Expiring-soon items      : 2
+Available items          : 2
+Attention-required items : 3
+Expired stock quantity   : 12
+Attention-required qty   : 35
+[RECOMMENDATION] Prioritize expired stock for disposal according to organizational food-safety procedures and review expiring-soon stock for immediate consumption, redistribution, or donation where appropriate.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 3
+Search item: paneer
+[RESULT] FD004 | Fresh Paneer | Dairy | 8 kg | EXPIRING SOON
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 3
+Search item: 
+[ERROR] Search text cannot be blank.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 4
+Item ID: FD004
+Operation (increase/reduce): reduce
+Quantity: 3
+[SUCCESS] Quantity updated.
+[INFO] Remaining stock: 5 kg
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 4
+Item ID: FD004
+Operation (increase/reduce): reduce
+Quantity: 50
+[ERROR] Cannot reduce by 50: only 5 kg in stock.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 4
+Item ID: XX99
+[ERROR] Item ID 'XX99' not found.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 5
+Item ID to remove: FD005
+[SUCCESS] Removed FD005 (Curd).
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 5
+Item ID to remove: FD005
+[ERROR] Item ID 'FD005' not found.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 9
+[ERROR] Invalid choice. Please enter a number from 1 to 8.
+
+==================================================
+        SMART FOOD-WASTE MANAGEMENT SYSTEM
+==================================================
+1. Add Food Item
+2. View Inventory
+3. Search Food Item
+4. Update Quantity
+5. Remove Food Item
+6. Expiry Monitoring
+7. Inventory Summary
+8. Exit
+--------------------------------------------------
+Enter your choice: 8
+[INFO] Application closed successfully.
